@@ -2,8 +2,7 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = os.getenv("HTTP API:
-8573872030:AAFTVQeD6sC7s0aF_GZ6eUB-5pRxKIvkv6Y")
+TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("FlashSave Bot is online ⚡")
